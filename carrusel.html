@@ -54,6 +54,7 @@
             cursor: pointer;
             transition: 450ms all;
             transform-origin: center left;
+            position: relative;
 
         }
 
@@ -63,16 +64,72 @@
             
         }
 
+        .carrusel--elemento--img {
+
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+
+        }
+
+        .carrusel--elemento--detalle {
+
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            font-size: 10px;
+            opacity: 0;
+            transition: 450ms opacity;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+
+        }
+
+        .carrusel--elemento--detalle:hover {
+
+            opacity: 1;
+
+        }
+
+        .carrusel--elemento--detalle img {
+
+            height: 20px;
+            padding: 2px;
+            width: 20px;
+
+        }
+
+.carrusel--elemento--detalle p {
+margin: 0;
+
+}
+
+
+
     </style>
 </head>
 <body>
     <section class="carrusel">
         <div class="carrusel--contenedor">
             <div class="carrusel--elemento">
+                <img class="carrusel--elemento--img" src="https://images.pexels.com/photos/3413678/pexels-photo-3413678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Foto">
+                <div class="carrusel--elemento--detalle">
+                    <div>
+                        <img src="assets/play-icon.png" alt="Play">
+                        <img src="assets/plus-icon.png" alt="Más">
+                    </div>                        
+                    <p class="carrusel--elemento--detalle--titulo">Título descriptivo</p>
+                    <p class="carrusel--elemento--detalle--subtitulo">2019 16+ 114 minutos</p>
+                </div>                
             </div>
             <div class="carrusel--elemento">
             </div>
-
         </div>
     </section>
 </body>
