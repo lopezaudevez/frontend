@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel 1</title>
+    <style>
+
+        body {
+
+            margin: 0;
+            
+        }
+
+        .carrusel {
+
+            overflow: scroll;
+            padding: 30px;
+            position: relative;
+            width: 100%;
+
+        }
+
+        .carrusel--contenedor {
+
+            white-space: nowrap;
+            margin: 70px 0;
+            padding-bottom: 10px;
+
+        }
+
+        .carrusel--contenedor:hover .carrusel--elemento {
+
+            opacity: 0.3;
+
+        }
+
+        .carrusel--contenedor:hover .carrusel--elemento:hover {
+
+            transform: scale(1.5);
+            opacity: 1;
+
+        }
+
+        .carrusel--elemento {
+
+            background-color:red;
+            border-radius: 20px;
+            height: 250px;
+            margin-right: 10px;
+            overflow: hidden;
+            width: 200px;
+            display: inline-block;
+            cursor: pointer;
+            transition: 450ms all;
+            transform-origin: center left;
+
+        }
+
+        .carrusel--elemento:hover ~ .carrusel--elemento {
+
+            transform: translate3d(100px, 0, 0);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section class="carrusel">
+        <div class="carrusel--contenedor">
+            <div class="carrusel--elemento">
+            </div>
+            <div class="carrusel--elemento">
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
