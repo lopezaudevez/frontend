@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Inicio sesión</title>
+    <title>Registro</title>
 </head>
 <body>
     <header class="header header--color">
@@ -12,23 +12,14 @@
     </header>
     <section class="login">
         <section class="login--contenedor">
-            <h2>Inicio de sesión</h2>
+            <h2>Regístrate</h2>
             <form class="login--contenedor--forma" action="">
+                <input class="input" type="text" placeholder="Nombre">
                 <input class="input" type="text" placeholder="Correo">
                 <input class="input" type="password" placeholder="Contraseña">
-                <button class="boton">Iniciar sesión</button>
-                <div class="login--contenedor--recuerdame">
-                <label>
-                    <input type="checkbox" id="caja1" value="checkbox"> Recuérdame
-                </label>
-                <a href="/">Olvidé mi contraseña</a>
-                </div>
+                <button class="boton">Registrarme</button>
             </form>
-            <section class="login--contenedor--social">
-                <div><img src="assets/google-icon.png" alt="Google">Inicia sesión con Google</div>
-                <div><img src="assets/twitter-icon.png" alt="Twitter">Inicia sesión con Twitter</div>
-            </section>
-            <p class="login--contenedor--registro">No tienes ninguna cuenta <a href="/">Regístrate</a></p>            
+            <div class="login--contenedor--registro"><a class="centrar" href="/">Iniciar sesión</a></div>
         </section>
     </section>
     <footer class="pie">
